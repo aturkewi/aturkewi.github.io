@@ -1,4 +1,4 @@
-title:            "Test Change 3"
+title:            "It's not too late to learn to code"
 description:      "Tips and tricks that are helping me learn to code. "
 disqus_shortname: aturkewi
 reading_time:     true
@@ -9,14 +9,14 @@ url: http://aturkewi.github.io/
 
 # Owner/author information
 owner:
-  name:           Your Name
-  avatar:         avatar.jpg
-  bio:            "Your bio goes here. It shouldn't be super long but a good two sentences or two should suffice."
-  email:          you@email.com
+  name:           Avidor Turkewitz
+  avatar:         avi_avatar.jpg
+  bio:            "Starting this blog I was 27 years old and just embarking on turning my life long interst of coding into a career. I want to try and pass along the tips and tricks that are making my day-to-day that much better."
+  email:          aviturkewitz@gmail.com
   # Social networking links used in footer. Update and remove as you like.
   twitter:        
   facebook:       
-  github:         
+  github: www.github.com/aturkewi         
   stackexchange:  
   linkedin:       
   instagram:      
