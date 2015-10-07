@@ -6,14 +6,14 @@ categories: [Ruby Together, Bundler, Ruby, Gems]
 description: A quick look at bundler and the ruby community
 tags: []
 image:
-  feature:
+  feature: bundler_background.png
   credit:
   creditlink:
 comments:
 share:
 date: 2015-10-06T19:56:19-04:00
 ---
-As I enter my second week at The Flatiron School my interest in learning about Ruby and the tools that I need to be a web developer continues to grow. I figured that since I can't always read text books on the train, perhaps some one might know some good Ruby podcasts that might be good to check out. Vinny to the rescue.
+As I enter my second week at The Flatiron School my interest in learning about Ruby and the tools that I need to be a web developer continues to grow. I figured that since I can't always read text books on the train, perhaps some one might know some good Ruby podcasts that might be good to check out Vinny to the rescue.
 
 ##Ruby Rogues
 
