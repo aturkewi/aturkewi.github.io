@@ -13,7 +13,7 @@ comments:
 share:
 date: 2015-10-06T19:56:19-04:00
 ---
-As I enter my second week at The Flatiron School my interest in learning about Ruby and the tools that I need to be a web developer continues to grow. I figured that since I can't always read text books on the train, perhaps some one might know some good Ruby podcasts that might be good to check out Vinny to the rescue.
+As I enter my second week at The Flatiron School my interest in learning about Ruby and the tools that I need to be a web developer continues to grow. I figured that since I can't always read text books on the train, perhaps some one might know some good Ruby podcasts that might be good to check out; Vinny to the rescue.
 
 ##Ruby Rogues
 
@@ -24,13 +24,13 @@ As I enter my second week at The Flatiron School my interest in learning about R
 --------------
 
 >>>###What is bundler?
->>>A quick aside about bundler in case you don't know what it is. Bundler is the Ruby gem that lets you quickly and easily download all the dependant gems that you need to run your app by simply typing ```bundle install``` (assuming whoever developed the app set it up with bundler of course). Not only does bundler allow you to get all the gems that you need it also ensures that you have the correct *version* of the gems as well. I don't know about you, but this seems prety important. 
+>>>A quick aside about bundler in case you don't know what it is. Bundler is the Ruby gem that lets you quickly and easily download all the dependant gems that you need to run your app by simply typing ```bundle install``` (assuming whoever developed the app used the bundler gem of course). Not only does bundler allow you to get all the gems that you need, it also ensures that you have the correct *version* of the gems as well. I don't know about you, but this seems pretty important. 
 
 ---------------
 
-To be specific, this episode hosted Andre Arko, part of the bundler core team. He talked about the challanges of trying to keep bunlder up to date and working given that it is an open source software. I was surprised to learn that this essential tool that is used by for profit copmanies was at first only being maintained by people in their spare time. 
+To be specific, this episode hosted Andre Arko, part of the bundler core team. He talked about the challenges of trying to keep bundler up to date and working given that it is an open source software. I was surprised to learn that this essential tool that is used by for profit companies was at first only being maintained by people in their spare time. 
 
-Andre went on to talk about the group he is working with called [ruby together](https://rubytogether.org/) which was created this past March. It's a small group that is funded by individuals and corporate sponsors to keep this essential tool in good working order. From listening to the podcast, it seems that there is a lot of open source Ruby work that is simply maintained if peoples spare time. 
+Andre went on to talk about the group he is working with called [ruby together](https://rubytogether.org/) which was created this past March. It's a small group that is funded by individuals and corporate sponsors to keep this essential tool in good working order. From listening to the podcast, it seems that there is a lot of open source Ruby work that is simply maintained in peoples spare time. 
 
 At the moment, I don't have the money, time, or skill required to help out, but I'm still interested to start seeing what the upcoming Ruby landscape looks like for me. 
 
