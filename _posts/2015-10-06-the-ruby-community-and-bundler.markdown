@@ -23,7 +23,7 @@ As I enter my second week at The Flatiron School my interest in learning about R
 
 --------------
 
-###What is bundler?
+>>>###What is bundler?
 >>>A quick aside about bundler in case you don't know what it is. Bundler is the Ruby gem that lets you quickly and easily download all the dependant gems that you need to run your app by simply typing ```bundle install``` (assuming whoever developed the app set it up with bundler of course). Not only does bundler allow you to get all the gems that you need it also ensures that you have the correct *version* of the gems as well. I don't know about you, but this seems prety important. 
 
 ---------------
