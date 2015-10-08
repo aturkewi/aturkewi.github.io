@@ -9,7 +9,7 @@ image:
   feature: bundler_background.png
   credit:
   creditlink:
-comments:
+comments: true
 share:
 date: 2015-10-06T19:56:19-04:00
 ---
