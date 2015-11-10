@@ -24,11 +24,10 @@ It seems that most people know the basics of github if you've been using it for 
 
 These commands are great to know but they aren't the most helpful when things start going wrong:
 
-<div align='center'>
-<img src="http://imgs.xkcd.com/comics/git.png" title="If that doesn't fix it, git.txt contains the phone number of a friend of mine who understands git. Just wait through a few minutes of 'It's really pretty simple, just think of branches as...' and eventually you'll learn the commands that will fix everything." alt_text="XKCD-1597">
-<figcap>http://xkcd.com/1597/</figcap>
-
-</div>
+<figure align='center'>
+<img src="http://imgs.xkcd.com/comics/git.png" title="If that doesn't fix it, git.txt contains the phone number of a friend of mine who understands git. Just wait through a few minutes of 'It's really pretty simple, just think of branches as...' and eventually you'll learn the commands that will fix everything." alt_text="XKCD-1597"><br>
+<figcap align='center'>http://xkcd.com/1597/</figcap>
+</figure>
 
 And an important part of being a developer is breaking things and learning to fix them. Ocassioanly we'll break something very badly and need to back track a little to put it back together. This is an instance where knowing a little bit more about git can really help. Knowing what is saved, when it gets saved, how it gets saved, and how to use this information can be a powerful confidence builder. My knowledge of git has helped me feel free to break things knowing that I can at least always get back to where I started. 
 
