@@ -6,7 +6,7 @@ categories: [git, git hub]
 description: Looking at some git commands beyond the basics. 
 tags: []
 image:
-  feature: /git_cover_photo.jpg
+  feature: git_cover_photo.jpg
   credit: 
   creditlink: 
 comments:
