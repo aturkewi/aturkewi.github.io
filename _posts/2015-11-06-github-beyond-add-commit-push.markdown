@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Github: Beyond Add, Commit, and Push"
+title: "Git: Beyond Add, Commit, and Push"
 modified:
 categories: [git, git hub]
 description: Looking at some git commands beyond the basics. 
