@@ -16,16 +16,18 @@ date: 2015-11-06T13:35:19-05:00
 It seems that most people know the basics of github if you've been using it for a few weeks:
 
 - `git add .` - Stage all files that are in your current directy level and lower.
-- `get commit -m "Some note"` - Commit stage changes with some note.
+- `get commit -m "Some note"` - Commit staged changes with some note.
 - `git push remote_name branch_name` - Push changes from a specific branch to some previoulsy named remote site.
 - `git fetch remote_name branch_name` - Download a specified branch from remote site.
 - `git merge branch_bame` - Combine code from specified local branch to branch that you are currently on.
 - `git pull remote_name branch_name` - FETCHES and MERGES remote branch into current local branch. 
 
-These commands are greate to know but they aren't the most helpful when things start going wrong:
+These commands are great to know but they aren't the most helpful when things start going wrong:
 
 <div align='center'>
 <img src="http://imgs.xkcd.com/comics/git.png" title="If that doesn't fix it, git.txt contains the phone number of a friend of mine who understands git. Just wait through a few minutes of 'It's really pretty simple, just think of branches as...' and eventually you'll learn the commands that will fix everything." alt_text="XKCD-1597">
+<figcap>http://xkcd.com/1597/</figcap>
+
 </div>
 
 And an important part of being a developer is breaking things and learning to fix them. Ocassioanly we'll break something very badly and need to back track a little to put it back together. This is an instance where knowing a little bit more about git can really help. Knowing what is saved, when it gets saved, how it gets saved, and how to use this information can be a powerful confidence builder. My knowledge of git has helped me feel free to break things knowing that I can at least always get back to where I started. 
@@ -35,6 +37,8 @@ And an important part of being a developer is breaking things and learning to fi
 One of the first things really confused me is 'When does git save my code?'. I would make a new branch, start working and then realize that I hadn't actually switched to the new branch yet. Was my work saved to the master branch? Sometimes I would be working on one branch and that work would show up on ALL the branches. 
 
 Here is a quick example to demonstrate WHEN your code is actaully saved to a branch. 
+
+1 - Here I am in a fresh repo. 
 
 <div align='center'>
 <img src="/images/2015-11-06-git-hub/img1-new-repo.png" title="New repo" alt_text="New repo">
@@ -52,15 +56,18 @@ Here is a quick example to demonstrate WHEN your code is actaully saved to a bra
 <img src="/images/2015-11-06-git-hub/img3-new-branch.png" title="New branch" alt_text="New branch">
 </div>
 
-After switching to new-branch, I can see that my new file is showing up here as well. Git knows that it's a new file and I can plainly see it in the directory. Let's stage this file now by calling git add.
+After switching to new-branch, I can see that my new file is showing up here as well. Git knows that it's a new file and I can plainly see it in the directory. Let's stage this file now by using `git add .`.
 
 4 - Well, now that I staged (added) this file, surely it should stay on new-branch, right? Let's check. 
+
 <div align='center'>
 <img src="/images/2015-11-06-git-hub/img4-commit-to-master.png" title="Switch back to master" alt_text="Switch back to master">
 </div>
+
 Well, it looks like adding the file didn't stop it from moving around when I switched branches either. Now I'll commit the file to the master branch. 
 
 5 - Just to check, lets make sure it's not still showing up on new-branch.
+
 <div align='center'>
 <img src="/images/2015-11-06-git-hub/img5-check-branch.png" title="Verify that file is not on new-branch" alt_text="Verify that file is not on new-branch">
 </div>
@@ -84,6 +91,14 @@ And now lets take a look at the file for my new-branch
 </div>
 
 We can see each hash associated with each commit on each branch. 
+
+Some other interesting information to take a look at here is the config file. 
+
+<div align='center'>
+<img src="/images/2015-11-06-git-hub/img7a-config.png" title="Config file" alt_text="Config file">
+</div>
+
+Here in the config file you can see your remote url as well as a few other bits of information. If you ever find that you need to change your remote name or URL, you can always just open up this config file and manually change it. 
 
 So far I haven't gone over any 'complex' git commands, but its all useful information to know to better understand the tool we are working with. The more you understand about it, the more comfortable you can be with it. But still, there are some more useful commands to know beyond `commit`, `add`, and `push`. 
 
