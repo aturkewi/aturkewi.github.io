@@ -120,5 +120,6 @@ You can see that we are able to call both `.community_gardens` and `.farmers_mar
 I hope this was helpful, and best of luck setting up your own polymorphic associations!
 
 ## Sources:
-
-https://launchschool.com/blog/understanding-polymorphic-associations-in-rails
+ - [https://launchschool.com/blog/understanding-polymorphic-associations-in-rails](https://launchschool.com/blog/understanding-polymorphic-associations-in-rails)
+ - [https://www.youtube.com/watch?v=6l9EAuev16k](https://www.youtube.com/watch?v=6l9EAuev16k)
+ - [http://guides.rubyonrails.org/association_basics.html#polymorphic-associations](http://guides.rubyonrails.org/association_basics.html#polymorphic-associations)
