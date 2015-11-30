@@ -6,7 +6,7 @@ categories: [active record, rails, ruby, polymorphic, associations, database]
 description:
 tags: []
 image:
-  feature: abstract-3.jpg
+  feature: polymorphic.jpg
   credit:
   creditlink:
 comments:
