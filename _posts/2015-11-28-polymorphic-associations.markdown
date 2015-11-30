@@ -2,11 +2,11 @@
 layout: post
 title: "Polymorphic Associations"
 modified:
-categories:
+categories: [active record, rails, ruby, polymorphic, associations, database]
 description:
 tags: []
 image:
-  feature:
+  feature: abstract-3.jpg
   credit:
   creditlink:
 comments:
