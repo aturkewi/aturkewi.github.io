@@ -14,25 +14,25 @@ owner:
   bio:            "Starting this blog I was 27 years old and just embarking on turning my life long interst of coding into a career. I want to try and pass along the tips and tricks that are making my day-to-day that much better."
   email:          aviturkewitz@gmail.com
   # Social networking links used in footer. Update and remove as you like.
-  twitter:        
-  facebook:       
-  github: www.github.com/aturkewi         
-  stackexchange:  
-  linkedin:       
-  instagram:      
-  flickr:         
+  twitter:
+  facebook:
+  github: aturkewi
+  stackexchange:
+  linkedin: aviturkewitz
+  instagram:
+  flickr:
   tumblr:         
   # google plus id, include the '+', eg +mmistakes
-  google_plus:    +yourid
+  google_plus: aviturkewitz
 
 # Background image to be tiled on all pages
-background: 
+background:
 
 # Analytics and webmaster tools stuff goes here
-google_analytics:   
-google_verify:      
+google_analytics:
+google_verify:
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:         
+bing_verify:
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    America/New_York
