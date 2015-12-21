@@ -59,8 +59,44 @@ Scaffold really does a lot for you, but it can easily be overkill. Let's take a 
 
 Creating a resource is very similar to creating a scaffold, but without a filled in views or controller. As far as the views go, it just gives you an empty folder and the controller just gives you a file that correctly inherits from Active Record. This is a good tool if you know you are going to want to have an object that the user will be able to access, but don't automatically want all the CRUD actions laid out via rails convention.
 
-## 'rails g model'
+## `rails g model`
 
 A model creates even fewer files for us. All we get is the migration and the model file. This is better if you are building an object that you want stored in the DB, but that you may not want the user to directly access. Another reason for using this option is if you would prefer to be more granular in the constructions of your site.
 
 ## `rails g controller`
+
+Generating a controller is a little bit different than everything we've looked at so far. The generate command uses CamelCase and is plural. Also, the options that you pass to the generate command are the method names you want in the controller. Here is an example `rails generate controller CreditCards open debit credit close`. Only the specified routes are added to the router and as this doesn't follow the most standard rails convention, the views it creates are just one or two lines stating their location:
+
+{% highlight ruby linenos%}
+<h1>CreditCards#credit</h1>
+<p>Find me in app/views/credit_cards/credit.html.erb</p>
+{% endhighlight %}
+
+Generating a controller would be great for something that you want to show, but may not exist in the database. Another good tool for this is to use it in conjunction with model so you can get more control of the routes created for you.
+
+## `rails g migration`
+
+Finally, we have the migration. This command creates the fewest files for you but it can be the trickiest to use. All this command does is create a migration file, but depending what you pass to it, you can create different types of migrations.
+
+### Create a new table
+
+To create a new table use something like`rails g migration CreatePosts name:string age:integer`. The first thing you pass is CamelCase, starts with the word 'Create' and has the model you want to create as a plural. After the create, it works just like any of the other generate commands where we use `column_name:data_type`.
+
+### Add or remove a column
+
+To add or remove columns you do something like `rails g migration AddContentToPosts content:text`. The general format here is `AddXXXToYYY` or `RemoveXXXFromYYY` followed by the columns you want to add or remove. The command written above for adding a content column to posts generates the following migration file:
+
+{% highlight ruby linenos%}
+class AddContentToPosts < ActiveRecord::Migration
+  def change
+    add_column :posts, :content, :text
+  end
+end
+{% endhighlight %}
+
+## Closing thoughts on `rails g`
+
+So those are the basic uses for the rails generate commands. Some important things to think about/remember:
+
+* You can always run the generate command and then go in an make change for things that didn't come out exactly correct (most useful for me with migrations).
+* Think about what method works best for you. Do you want to start small and build up your files? Or do you want to create everything and then cut files back?
