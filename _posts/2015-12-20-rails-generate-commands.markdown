@@ -2,7 +2,7 @@
 layout: post
 title: "Rails Generate Commands"
 modified:
-categories:
+categories: [rails, ruby, rails generate]
 description:
 tags: []
 image:
