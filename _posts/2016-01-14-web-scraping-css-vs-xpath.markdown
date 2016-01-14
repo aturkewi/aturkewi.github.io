@@ -58,7 +58,7 @@ Nokogiri::XML(raw_page)
 To make sure that this would not affect the test, I ran a quick benchmark to make sure that just getting the page with these two methods would yield equal speeds.
 
 <figure align='center'>
-  <img src='/images/2016-01-14-web-scraping/img-1-nokogiri-import.png' title='Benchmark import from Nokogiri' alt_text=''><br>
+  <img src='/images/2016-01-14-scraping/img-1-nokogiri-import.png' title='Benchmark import from Nokogiri' alt_text=''><br>
   <figcap>Benchmark import from Nokogiri</figcap>
 </figure>
 
@@ -77,7 +77,7 @@ For running the actual benchmark, the goal was to scrape through all 1000 produc
 ##The results
 
 <figure align='center'>
-  <img src='/images/2016-01-14-web-scraping/img-2-benchmark-results.png' title='Benchmark Results' alt_text=''><br>
+  <img src='/images/2016-01-14-scraping/img-2-benchmark-results.png' title='Benchmark Results' alt_text=''><br>
   <figcap>Benchmark Results</figcap>
 </figure>
 
