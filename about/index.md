@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About the Jekyll Theme
+title: Avi Turkewitz
 image:
   feature: abstract-5.jpg
   credit: dargadgetz
@@ -9,26 +9,18 @@ comments: false
 modified: 2014-12-24
 ---
 
-They say three times the charm, so here is another free responsive Jekyll blog theme for you. I've learned a ton since open sourcing my first two themes [on Github](http://github.com/mmistakes), and wanted to try a few new things this time around. 
+My name is Avi Turkewitz and I am a full stack developer.
 
-If you've used any of [my other themes](http://mademistakes.com/work/jekyll-themes/) most of this should be familiar territory...
+## Why am I keeping this blog and what is it for?
 
-## What HPSTR brings to the table:
+I formally started my career as a web developer in Aug. 2015 by going to The Flatiron School (feel free to message me or ask me about my experience there). One of the requirements for the 3 month long programing bootcamp was to write 4 blog posts.
 
-* Responsive templates for post, page, and post index `_layouts`. Looks great on mobile, tablet, and desktop devices.
-* Gracefully degrads in older browsers. Compatible with Internet Explorer 8+ and all modern browsers.  
-* Modern and minimal design.
-* Sweet animated menu.
-* Background image support.
-* Readable typography to make your words shine.
-* Support for large images to call out your favorite posts.
-* Built-in support for Sass courtesy of Jekyll 2.x.
-* Optional [Disqus](http://disqus.com) comments.
-* Simple and clear permalink structure[^1].
-* [Open Graph](https://developers.facebook.com/docs/opengraph/) and [Twitter Cards](https://dev.twitter.com/docs/cards) support for a better social sharing experience.
-* Simple [custom 404 page]({{ site.url }}/404.html) to get you started.
-* Stylesheets for Pygments and Coderay [syntax highlighting]({{ site.url }}/code-highlighting-post/) to make your code examples look snazzy.
+I really enjoyed the process of writing technical blog posts as it helps me gain a deeper understanding of a subject and it also gives me the chance to help out some one else who is learning. One of my instructors, Joe Burgess, put it well when he suggested we "...write the resource we wish we had". This is my goal for this blog.
 
-<div markdown="0"><a href="{{ site.url }}/theme-setup/" class="btn btn-info">Theme Setup</a> <a href="https://github.com/mmistakes/hpstr-jekyll-theme" class="btn btn-success">Download HPSTR</a></div>
+## From Mechanical Engineer to Full Stack Developer
 
-[^1]: Example: *domain.com/category-name/post-title*
+A little bit of background about myself. I went to UMass Amherst from 2006 to 2010 to study Mechanical Engineering. While studying I always found myself drawn towards computers and programing. I enjoyed programing a robot for one class and coding simulations in MatLab. I took up a job doing tech support for the campus. I even managed to find some time in my schedule to take an intro to Python class. After these 4 years though, I went on to jobs that did not require any programing.
+
+In my spare time I still found myself gravitating towards programing. I followed along tutorials for Android and iPhone apps. I went through some online resources like Code Academy. Finally, at my last Mechanical Engineering job, I taught myself some Visual Basic so that I could import two spread sheets, compare them, and output the results on a company form. That's when I realized that this was something I could really do as a career.
+
+I applied to the Flatiron School and have been working towards being a web developer ever since.
