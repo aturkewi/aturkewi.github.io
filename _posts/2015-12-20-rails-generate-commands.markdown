@@ -67,7 +67,7 @@ A model creates even fewer files for us. All we get is the migration and the mod
 
 Generating a controller is a little bit different than everything we've looked at so far. The generate command uses CamelCase and is plural. Also, the options that you pass to the generate command are the method names you want in the controller. Here is an example `rails generate controller CreditCards open debit credit close`. Only the specified routes are added to the router and as this doesn't follow the most standard rails convention, the views it creates are just one or two lines stating their location:
 
-{% highlight ruby linenos%}
+{% highlight html linenos%}
 <h1>CreditCards#credit</h1>
 <p>Find me in app/views/credit_cards/credit.html.erb</p>
 {% endhighlight %}
