@@ -6,7 +6,7 @@ categories:
 description:
 tags: []
 image:
-  feature: 2015-12-20-rails-g-cover.jpg
+  feature: 2016-03-03-active-record.jpg
   credit:
   creditlink:
 comments:
