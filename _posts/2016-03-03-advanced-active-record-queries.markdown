@@ -19,6 +19,8 @@ I want to go over some tips and tricks I found useful as well as a few examples.
 
 ## Understanding what Active Record Queries and Arel Are
 
+>Note: If you are interested in following along and playing around with this data, you can grab it all here: [https://github.com/aturkewi/shoppingExperience](https://github.com/aturkewi/shoppingExperience)
+
 Arel is a library that active record uses to allow us developers to write seemingly simple lines of code that are then converted into some database query language such as SQL. Another thing that is really nice about it is that we can write our query with Active Record and Arel will take care of converting our query to the language that is used by the database.
 
 Here is an example. If we have a class User that has_many of a class Product, then we can write this Active Record query, `User.first.products.order(:name)`, to get all of a user's products sorted by name. Arel will then convert that to 2 SQL queries for us. Take a look at the example below:
@@ -104,9 +106,9 @@ If we take a look, we can see that the raw SQL queries are exactly the same! Plu
 
 ### `sum()`
 
-To change tracks a bit here, I've always found it difficult to get values that were grouped and summed from these advanced SQL queries. Lets try and get all of the users that have spend more than 5600 on products.
+To change tracks a bit here, I've always found it difficult to get values that were grouped and summed from these advanced SQL queries. Lets try and get all of the users that have spend more than 5600 on products. I would also like to shout out to another Learn student [Lisa Marie](https://github.com/lisamarie616) who's code snippet for a different `sum()` helped me better understand this tool.
 
-My first step here is to get users and products on the same table together. I know I'm looking to get back Users as my return value, so I'll be calling this query on User. I also know that all I need from my products table will be price (I don't care about the name of the product). This is a complex query, so let's just start by trying to get this to show up in SQLiteBrowser first. (I'm using my terminal to convert my Active Record query into SQL). I decided to order my results by user's name as well so that I'll be able to see all their rows together.
+Now, my first step here is to get users and products on the same table together. I know I'm looking to get back Users as my return value, so I'll be calling this query on User. I also know that all I need from my products table will be price (I don't care about the name of the product). This is a complex query, so let's just start by trying to get this to show up in SQLiteBrowser first. (I'm using my terminal to convert my Active Record query into SQL). I decided to order my results by user's name as well so that I'll be able to see all their rows together.
 
 {% highlight ruby %}
 2.2.0 :075 > User.select("users.*, products.price").joins(carts: { line_items: :product}).order("users.name")
