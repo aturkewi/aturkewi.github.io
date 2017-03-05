@@ -37,13 +37,16 @@ bing_verify:
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    America/New_York
 future:      true
-highlighter: pygments
-markdown:    kramdown
+# highlighter: pygments
+markdown:    redcarpet
 gems:
   - jekyll-sitemap
 sass:
   sass_dir: _sass
   style: compressed
+
+redcarpet:
+    extensions: ["fenced_code_blocks"]
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink:   /:categories/:title/
