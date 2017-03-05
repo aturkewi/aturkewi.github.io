@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "'Building My First Chrome Extension'"
+title: "Building My First Chrome Extension"
 modified: 2017-02-26 16:13:09 -0500
 tags: [chrome, mailto, js]
 image:
-  feature: feature-img-chrome.jpg
+  feature: 2017-02-26-feature-img-chrome.jpg
   credit: 
   creditlink: 
 comments: 
@@ -13,7 +13,9 @@ share:
 
 It's been a good long while since I created a blog post on here, so I figured I really had to get back to it. Today I want to go over something that I've been meaning to do for ages and when I finally sat down to do it, it took remarkably little time. I'm talking about building my own Google Chrome Extension. 
 
-For the purpose of this blog, I'm going to talk about a simple extension to solve the problem of 'I mean to click copy on that email link, but now Apple Mail is opening up :face_palm:' (this is something I _never_ actually want to happen). The plan? Create an extension that would over-ride the `mailto:` and just copy the address to my clipboard instead. Going into this, my plan is to basically be able to write some sort of javascript file that will take care of the copying when I click on one of these links. 
+For the purpose of this blog, I'm going to talk about a simple extension to solve the problem of "I mean to click copy on that email link, but now Apple Mail is opening up :face_palm:" (this is something I *never* actually want to happen). The plan? Create an extension that would over-ride the `mailto:` and just copy the address to my clipboard instead. Going into this, my plan is to basically be able to write some sort of javascript file that will take care of the copying when I click on one of these links. 
+
+Feel free to checkout [emailTo:Clipeboard](https://chrome.google.com/webstore/detail/dpckhpnekcojocijmcdpondmicbkbgpo)
 
 ## The key parts of a Chrome Extension
 
@@ -31,11 +33,11 @@ The absolute minimum thing you need to create a Chrome Extension is a [`manifest
 }
 ```
 
-All we _need_ to have is the version of the manifest, the name of your extension, and the version of your extension. Great! We have the bare minimum :)
+All we *need* to have is the version of the manifest, the name of your extension, and the version of your extension. Great! We have the bare minimum :)
 
-As I mentioned above, I'd like to run some javascript on every page that that will over-ride the default `mailto:` action. Going through the docs on the [manifest](https://developer.chrome.com/extensions/manifest) and looking at other [chrome extensions](https://github.com/NStephenson/LE3/), I found that I needed to use the [`"content_scripts":`](https://developer.chrome.com/extensions/content_scripts) key in the manifest to run scripts. The bare minimum for this is to have an array of objects that have `"matches": []` (an array of URLs to run this script on) and `"js": []` (an array of js files that you'd like run).
+As I mentioned above, I'd like to run some javascript on every page that that will over-ride the default `mailto:` action. Going through the docs on the [manifest](https://developer.chrome.com/extensions/manifest) and looking at other [chrome extensions](https://github.com/NStephenson/LE3/), I found that I needed to use the [`"content_scripts":`](https://developer.chrome.com/extensions/content_scripts) key in the manifest to run scripts. The bare minimum for this is to have an array of objects that have `"matches": []` (an array of URLs that we would like our JS to be run on) and `"js": []` (an array of js files that you'd like run).
 
-I think I can fit all the javascript required for this into one file that I'll call `index.js` and I want this to run on _all_ webpages (seriously, I never want any mail app to open when I click on an email address), so my manifest now looks like this:
+I think I can fit all the javascript required for this into one file that I'll call `index.js`. I want this to run on _all_ webpages (seriously, I never want any mail app to open when I click on an email address), so my manifest now looks like this:
 
 ```json
 {
@@ -57,7 +59,7 @@ I think I can fit all the javascript required for this into one file that I'll c
 
 I do want to add one more optional key to the `"content_scripts"`, and that's `"run_at": <option>`. Here I want to make sure that my javascript doesn't load until the [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction) is on the page. To do this, I add `"run_at": "document_idle"`. You can get a full list of options on the page linked above about content_scripts. 
 
-The final bit that I want to add is mostly cosmetic, it's the icon at the top of the browser and what happens when it's clicked! There are two options to set this up, [`"browser_action"`](https://developer.chrome.com/extensions/browserAction) and [`"page_action"`](https://developer.chrome.com/extensions/pageAction). A page action is usually used for an extension that is only active on _some_ pages. Given that what I want to build here should be active on all pages, I'm going with `"browser_action"`. 
+The final bit that I want to add is mostly cosmetic; it's the icon at the top of the browser and what happens when it's clicked! There are two options to set this up, [`"browser_action"`](https://developer.chrome.com/extensions/browserAction) and [`"page_action"`](https://developer.chrome.com/extensions/pageAction). A page action is usually used for an extension that is only active on _some_ pages. Given that what I want to build here should be active on all pages, I'm going with `"browser_action"`. 
 
 There are two keys that I need to build this, the icon, and the popup that displays when some one clicks on my icon:
 
