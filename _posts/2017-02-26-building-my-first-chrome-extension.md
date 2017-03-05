@@ -4,7 +4,7 @@ title: "'Building My First Chrome Extension'"
 modified: 2017-02-26 16:13:09 -0500
 tags: [chrome, mailto, js]
 image:
-  feature: 
+  feature: feature-img-chrome.jpg
   credit: 
   creditlink: 
 comments: 
