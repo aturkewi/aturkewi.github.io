@@ -29,7 +29,7 @@ The absolute minimum thing you need to create a Chrome Extension is a [`manifest
 {
   "manifest_version": 2,
   "name": "eMailTo:Clipboard",
-  "version": "1.0",
+  "version": "1.0"
 }
 ```
 
