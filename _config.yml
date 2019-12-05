@@ -21,7 +21,7 @@ owner:
   linkedin: aviturkewitz
   instagram:
   flickr:
-  tumblr:         
+  tumblr:
   # google plus id, include the '+', eg +mmistakes
   google_plus: aviturkewitz
 
@@ -38,7 +38,7 @@ bing_verify:
 timezone:    America/New_York
 future:      true
 # highlighter: pygments
-markdown:    redcarpet
+markdown:    kramdown
 gems:
   - jekyll-sitemap
 sass:
