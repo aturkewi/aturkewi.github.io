@@ -8,3 +8,4 @@ Useful commands:
 
 - `rake new_post` - Creates a new post. This command will ask for a title and tags
 - `jekyll build` - Builds the html for the `_posts` dir
+- `bundle exec jekyll server` - Runs a local server
